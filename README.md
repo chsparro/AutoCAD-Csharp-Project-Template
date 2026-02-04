@@ -23,15 +23,15 @@ The paths to the AutoCAD libraries referenced by the project must be consistent 
 ``` xml
 	    <!-- Change the paths to the targeted AutoCAD libraries -->
 		<Reference Include="AcCoreMgd">
-			<HintPath>C:\ObjectARX 2022\inc\AcCoreMgd.dll</HintPath>
+			<HintPath>lib\ACAD2022\AcCoreMgd.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
 		<Reference Include="AcDbMgd">
-			<HintPath>C:\ObjectARX 2022\inc\AcDbMgd.dll</HintPath>
+			<HintPath>lib\ACAD2022\AcDbMgd.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
 		<Reference Include="AcMgd">
-			<HintPath>C:\ObjectARX 2022\inc\AcMgd.dll</HintPath>
+			<HintPath>lib\ACAD2022\AcMgd.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
 ```
