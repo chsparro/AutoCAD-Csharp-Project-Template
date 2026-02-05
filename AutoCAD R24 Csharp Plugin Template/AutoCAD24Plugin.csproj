@@ -9,10 +9,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>$safeprojectname$</RootNamespace>
     <AssemblyName>$safeprojectname$</AssemblyName>
-	
     <!-- Change the targeted .NET Framework version -->
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-	
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -24,10 +22,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <StartAction>Program</StartAction>
-	
     <!-- Change the path to the installation folder of the  targeted AutoCAD version -->
     <StartProgram>C:\Program Files\Autodesk\AutoCAD 2022\acad.exe</StartProgram>
-	
     <StartArguments>/nologo /b "start.scr"</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -39,7 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-  
     <!-- Change the paths to the targeted AutoCAD libraries -->
     <Reference Include="AcCoreMgd">
       <HintPath>lib\ACAD2022\AcCoreMgd.dll</HintPath>
@@ -53,7 +48,6 @@
       <HintPath>lib\ACAD2022\AcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
-	
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,6 +65,13 @@
     <None Include="start.scr">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="test\Test.dwg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="lib\ACAD2022\accoremgd.dll" />
+    <Content Include="lib\ACAD2022\acdbmgd.dll" />
+    <Content Include="lib\ACAD2022\acmgd.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
